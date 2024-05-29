@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloader Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #34495e;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 0;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #3b5998;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #ecf0f1;
+            color: black;
+            overflow-y: auto;
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .folder-setting input[type="text"] {
+            width: calc(50% - 10px);
+            margin-right: 10px;
+        }
+
+        .folder-setting {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h1>Online Download Manager</h1>
+        <a href="#" id="general-link">通用</a>
+        <a href="#" id="file-classification-link">文件归类系统</a>
+    </div>
+    <div class="main-content" id="general-settings" style="display: none;">
+        <h1>通用</h1>
+        <label>
+            <input type="checkbox" id="enable-downloads"> 启用下载管理
+        </label>
+    </div>
+    <div class="main-content" id="file-classification-system">
+        <h1>文件归类系统</h1>
+        <label>
+            <input type="checkbox" id="enable-routing"> 启用下载文件路由系统
+        </label>
+        <div id="folder-settings">
+            <h2>文件夹设置</h2>
+        </div>
+        <button id="add-setting">添加设置</button>
+        <button id="save-settings">保存设置</button>
+    </div>
+    <script src="../default_settings.js"></script>
+    <script src="options.js"></script>
+</body>
+
+</html>
