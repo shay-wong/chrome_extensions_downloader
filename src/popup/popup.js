@@ -62,10 +62,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const details = document.createElement("div");
         details.className = "download-details";
         const filename = document.createElement("div");
-        filename.className = "download-filename";
+        filename.classList.add("download-filename", "download-limit-wh");
+        // filename.className = "download-filename";
         filename.textContent = downloadItem.filename.split("/").pop();
         const url = document.createElement("div");
-        url.className = "download-url";
+        url.classList.add("download-url", "download-limit-wh");
+        // url.className = "download-url";
         url.textContent = downloadItem.url;
         const size = document.createElement("div");
         size.className = "download-size";
