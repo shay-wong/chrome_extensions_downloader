@@ -1,28 +1,32 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="zh" class="loading" chrome-refresh-2023>
+<html class="loading" dir="ltr" lang="zh" chrome-refresh-2023>
 
 <head>
     <meta charset="utf-8">
-    <meta name="color-scheme" content="light dark">
+    <!-- <meta name="color-scheme" content="light dark"> -->
     <title>Downloader</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="popup.css">
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            margin: 0;
-            position: relative;
-        }
-    </style> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="downloads-head">
         <h1 id="title">Downloader</h1>
-        <button id="settings-button"><i class="material-symbols-outlined">settings</i></button>
+        <div class="downloads-items">
+            <button class="downloads-items-button" id="delete_sweep_button">
+                <i class="material-symbols-outlined" id="delete_sweep">
+                    delete_sweep
+                </i>
+            </button>
+            <button class="downloads-items-button" id="settings_button">
+                <i class="material-symbols-outlined" id="settings">
+                    settings
+                </i>
+            </button>
+        </div>
     </div>
     <div id="downloads"></div>
     <script src="popup.js"></script>
