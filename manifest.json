@@ -3,7 +3,7 @@
   "name": "Downloader",
   "version": "1.0",
   "description": "A simple Chrome extension for download management.",
-  "permissions": ["activeTab", "downloads", "storage"],
+  "permissions": ["activeTab", "downloads", "downloads.open", "storage"],
   "background": {
     "service_worker": "src/background/background.js"
   },
