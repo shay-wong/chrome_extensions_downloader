@@ -74,9 +74,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const settingDiv = document.createElement("div");
     settingDiv.className = "folder-setting";
     settingDiv.innerHTML = `
-      <input type="text" class="file-type" placeholder="文件格式 (e.g., pdf)" value="${fileType}">
-      <input type="text" class="folder" placeholder="文件夹名称" value="${folder}">
-      <button class="remove-setting">删除</button>
+    <input type="text" class="folder" placeholder="文件夹名称" value="${folder}" >
+    <input type="text" class="file-type" placeholder="文件格式 (e.g., pdf)" value="${fileType}">
+    <button class="remove-setting">删除</button>
     `;
     settingDiv
       .querySelector(".remove-setting")
@@ -84,5 +84,5 @@ document.addEventListener("DOMContentLoaded", function () {
         settingDiv.remove();
       });
     folderSettingsContainer.appendChild(settingDiv);
-  }
+  };
 });
