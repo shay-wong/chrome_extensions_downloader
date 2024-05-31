@@ -106,6 +106,13 @@
   color: #00e1ffe0;
 }
 
+#settings_button{
+  transition: transform 0.4s ease-in-out;
+}
+#settings_button:hover{
+  transform: rotate(90deg);
+}
+
 .downloads-items-button {
   border: none;
   border-radius: 10px 10px;

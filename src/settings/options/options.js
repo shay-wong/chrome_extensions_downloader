@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     settingDiv.innerHTML = `
     <input type="text" class="folder" placeholder="文件夹名称" value="${folder}" >
     <input type="text" class="file-type" placeholder="文件格式 (e.g., pdf)" value="${fileType}">
-    <button class="remove-setting">删除</button>
+    <button class="remove-setting"><i class="material-symbols-outlined" id="cancel">cancel</i></button>
     `;
     settingDiv
       .querySelector(".remove-setting")
